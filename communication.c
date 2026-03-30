@@ -20,12 +20,12 @@ NTSTATUS IoControl(PDEVICE_OBJECT DeviceObject, PIRP Irp)
     ULONG ControlCode = stack->Parameters.DeviceIoControl.IoControlCode;
     ULONG inLen = stack->Parameters.DeviceIoControl.InputBufferLength;
     ULONG outLen = stack->Parameters.DeviceIoControl.OutputBufferLength;
-
+	//ioctl codes defined in #communication.h i think :sweat:
     switch (ControlCode)
     {
     case IO_GET_CLIENTADDRESS:
         if (outLen < sizeof(ULONG)) {
-            Status = STATUS_BUFFER_TOO_SMALL;
+            Status = STATUS_BUFFER_TOO_SMALL; //very straightforward ;)
             ByteID = 0;
             goto Complete;
         }
@@ -65,7 +65,7 @@ NTSTATUS IoControl(PDEVICE_OBJECT DeviceObject, PIRP Irp)
     if (ControlCode == IO_GET_CLIENTADDRESS) {
 
         PULONGLONG Output = (PULONGLONG)Irp->AssociatedIrp.SystemBuffer;
-        *Output = clientAddr;   // or keep as pointer if you want
+        *Output = clientAddr;   
 
         DebugMessage("clientAddr Requested\n");
 
