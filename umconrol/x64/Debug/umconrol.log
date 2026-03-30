@@ -1,0 +1,15 @@
+﻿  main.cpp
+Z:\newreadwritedriver\umconrol\kernelInterface.hpp(71,3): warning C4984: 'if constexpr' is a C++17 language extension
+  (compiling source file 'main.cpp')
+      Z:\newreadwritedriver\umconrol\kernelInterface.hpp(44,7):
+      This diagnostic occurred in the compiler generated function 'type KernelInterface::ReadVirtualMemory(uint64_t,uint64_t,size_t)'
+  
+Z:\newreadwritedriver\umconrol\kernelInterface.hpp(74,8): warning C4984: 'if constexpr' is a C++17 language extension
+  (compiling source file 'main.cpp')
+      Z:\newreadwritedriver\umconrol\kernelInterface.hpp(44,7):
+      This diagnostic occurred in the compiler generated function 'type KernelInterface::ReadVirtualMemory(uint64_t,uint64_t,size_t)'
+  
+Z:\newreadwritedriver\umconrol\main.cpp(22,12): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'uint64_t'
+  umconrol.vcxproj -> C:\Users\Jackson\OneDrive\Desktop\testdriver\umconrol.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.
