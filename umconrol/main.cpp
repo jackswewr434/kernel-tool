@@ -9,12 +9,7 @@
 #include <Windows.h>
 #include <winternl.h>
 #include <filesystem>
-#pragma comment(lib, "ntdll.lib")
-//preciate yeri diaz for moral support
-#define ProcessProtectionLevelInformation ((PROCESSINFOCLASS)50)  // Fix 1: Cast to PROCESSINFOCLASS
-#define PROCESS_PROTECTION_SYSTEM        2
-#define PROCESS_PROTECTION_AUDIT         4
-
+//detection :thinking:
 struct Vector3 {
     float x, y, z;
 };
